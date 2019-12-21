@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@mipmap/s6"
+    android:padding="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/login_goods"
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:hint="请输入您要搜素的商品"
+        android:textColorHint="@color/colorAccent"
+        android:layout_height="match_parent">
+    </EditText>
+    <Button
+        android:id="@+id/login_search"
+        android:layout_width="0dp"
+        android:text="点击搜素"
+        android:layout_weight="2"
+        android:layout_height="match_parent">
+    </Button>
+</LinearLayout>
+    <com.bawei.zhangjiafu37.diwgets.FlowLayout
+        android:id="@+id/flow"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    </com.bawei.zhangjiafu37.diwgets.FlowLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
